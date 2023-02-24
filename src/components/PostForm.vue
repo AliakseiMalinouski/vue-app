@@ -4,7 +4,7 @@
         <h4>Создание поста</h4>
         <input v-model="post.title"   type="text" placeholder="Название"/>
         <input v-model="post.body"   type="text" placeholder="Описание"/>
-        <button @click="createPost">Создать</button>
+        <my-button @click="createPost">Создать</my-button>
         </form>
   </div>
 </template>
@@ -12,8 +12,13 @@
 
 <script>
 
+import MyButton from './UI/MyButton.vue';
+
 export default {
     name: "PostForm",
+    components: {
+        MyButton
+    },
     data () {
         return {
             post: {

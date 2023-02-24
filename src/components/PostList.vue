@@ -21,9 +21,5 @@ import PostItem from './PostItem.vue';
 </script>
 
 <style>
-    .post {
-    width: 100%;
-    padding: 15px;
-    border: 1px solid teal;
-    }
+    
 </style>
